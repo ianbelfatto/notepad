@@ -1,1 +1,2 @@
-# notepad
+# QuickNotes (notepad app)
+
