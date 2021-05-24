@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+if ARGV[0]
+	File.open("notes.txt", "a") do |f|
+		f.puts ARGV[0]
+	end
+end
+
+# File.open("notes.txt", "a") do |f|
+# 	f.puts
+# end
+
+File.open("notes.txt", "r") do |fileLine|
+	while line = fileLine.gets
+		puts line
+	end
+end
+
+input_lines = File.readlines('notes.txt')
+p "What line do you want to delete"
+user_input = gets.chomp
+if user_input
+  user_input = "take-notes delete[user_input]"
+end
